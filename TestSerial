@@ -1,0 +1,5 @@
+import serial
+ser1=serial.Serial('/dev/tty.usbmodem14101',9600)
+while 1:
+  arduinoData=ser1.readline()
+  print(arduinoData)
